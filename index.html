@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap" rel="stylesheet">
+    <title>NCSAT Survey</title>
+</head>
+<body>
+    <div id="app" class="wrapper">
+        <section class="one" id="one">
+            <div class="content">
+                <h1 class="intro">
+                    Dear Sahabat Sehat..
+                </h1>
+                <br>
+                <h1 class="intro">
+                    Survey ini merupakan salah satu langkah kami untuk bisa terus memberikan dan meningkatkan pelayanan kami, tentunya dengan tujuan membantu sahabat sehat menjalankan pola hidup sehat dengan menyenangkan sekaligus berdampak.
+                </h1>
+                <br>
+                <h1 class="intro">
+                    Karena kami yakin SEHAT adalah Hak Segala Bangsa
+                </h1>
+                <br>
+                <span>
+                    <button onclick="next()" id="next" class="next-button">Next</button>
+                </span>
+            </div>
+        </section>
+        <section class="one" id="two">
+            <div class="number">1/5</div>
+            <div class="content">
+                <div class="container">
+                    <h1>Penjelasan kami menjawab kebutuhan/kendala</h1>
+                    <div class="star-widget">
+                        <input type="radio" name="rate-consult" id="rate-5-Consult" onclick="my5StarConsult()">
+                        <label for="rate-5-Consult" class="fas fa-star"></label>
+                        <input type="radio" name="rate-consult" id="rate-4-Consult" onclick="my4StarConsult()">
+                        <label for="rate-4-Consult" class="fas fa-star"></label>
+                        <input type="radio" name="rate-consult" id="rate-3-Consult" onclick="my3StarConsult()">
+                        <label for="rate-3-Consult" class="fas fa-star"></label>
+                        <input type="radio" name="rate-consult" id="rate-2-Consult" onclick="my2StarConsult()">
+                        <label for="rate-2-Consult" class="fas fa-star"></label>
+                        <input type="radio" name="rate-consult" id="rate-1-Consult" onclick="my1StarConsult()">
+                        <label for="rate-1-Consult" class="fas fa-star"></label>
+                        <form action="#">
+                            <header> <i id="face-1"></i></header>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="one" id="three">
+            <div class="number">2/5</div>
+            <div class="content">
+                <div class="container">
+                    <h1>Penyampaian informasi mudah dipahami</h1>
+                    <div class="star-widget">
+                        <input type="radio" name="rate-communication" id="rate-5-Communication" onclick="my5StarCommunication()">
+                        <label for="rate-5-Communication" class="fas fa-star"></label>
+                        <input type="radio" name="rate-communication" id="rate-4-Communication" onclick="my4StarCommunication()">
+                        <label for="rate-4-Communication" class="fas fa-star"></label>
+                        <input type="radio" name="rate-communication" id="rate-3-Communication" onclick="my3StarCommunication()">
+                        <label for="rate-3-Communication" class="fas fa-star"></label>
+                        <input type="radio" name="rate-communication" id="rate-2-Communication" onclick="my2StarCommunication()">
+                        <label for="rate-2-Communication" class="fas fa-star"></label>
+                        <input type="radio" name="rate-communication" id="rate-1-Communication" onclick="my1StarCommunication()">
+                        <label for="rate-1-Communication" class="fas fa-star"></label>
+                        <form action="#">
+                            <header><i id="face-2"></i></header>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="one">
+            <div class="number">3/5</div>
+            <div class="content">
+                <div class="container">
+                    <h1>Mendapatkan Edukasi Pola Hidup Sehat Alami yang jelas</h1>
+                    <div class="star-widget">
+                        <input type="radio" name="rate-education" id="rate-5-Education" onclick="my5StarEducation()">
+                        <label for="rate-5-Education" class="fas fa-star"></label>
+                        <input type="radio" name="rate-education" id="rate-4-Education" onclick="my4StarEducation()">
+                        <label for="rate-4-Education" class="fas fa-star"></label>
+                        <input type="radio" name="rate-education" id="rate-3-Education" onclick="my3StarEducation()">
+                        <label for="rate-3-Education" class="fas fa-star"></label>
+                        <input type="radio" name="rate-education" id="rate-2-Education" onclick="my2StarEducation()">
+                        <label for="rate-2-Education" class="fas fa-star"></label>
+                        <input type="radio" name="rate-education" id="rate-1-Education" onclick="my1StarEducation()">
+                        <label for="rate-1-Education" class="fas fa-star"></label>
+                        <form action="#">
+                            <header> <i id="face-3"></i></header>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="five">
+            <div class="number">4/5</div>
+            <div class="content-2">
+                <div id="button-container" class="container-2">
+                    <h1>Seberapa besar Sahabat Sehat mau merekomendasikan IT's Buah ke teman atau kolega terdekat?</h1>
+                    <button onclick="getValue(this)" class="btn btn-scale-1 btn-scale btn-scale-desc-1">1</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-2 btn-scale btn-scale-desc-2">2</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-3 btn-scale btn-scale-desc-3">3</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-4 btn-scale btn-scale-desc-4">4</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-5 btn-scale btn-scale-desc-5">5</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-6 btn-scale btn-scale-desc-6">6</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-7 btn-scale btn-scale-desc-7">7</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-8 btn-scale btn-scale-desc-8">8</button>
+                    <button onclick="getValue(this)" class="btn btn-scale-9 btn-scale btn-scale-desc-9">9</button>
+                    <button  onclick="getValue(this)"class="btn btn-scale-10 btn-scale btn-scale-desc-10">10</button>
+                </div>
+                <!-- <div class="description">
+                    <h3>Sangat Buruk</h3>
+                    <h3>Sangat Baik</h3>
+                </div> -->
+            </div>
+        </section>
+        <section class="six">
+            <div class="number">5/5</div>
+            <div class="content-2">
+                <h1>Dan terakhir, bisakah sahabat sehat memberi tahu kami mengapa memilih angka tersebut?</h1>
+                <Textarea rows="1" id="submit-1" spellcheck="false" maxlength="300"></Textarea>
+                <p id="count"></p>
+                <button id='submit' class="submit-form" >
+               <a>Submit</a></button>
+            </div>
+        </section>
+   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+  <!-- onsubmit="submitSurvey()" -->
